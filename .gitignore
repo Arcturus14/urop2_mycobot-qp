@@ -1,0 +1,45 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.vscode/settings.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+configs/jetson.local.json
+.jetson/
+data/raw/jetson/
+reports/jetson/
+data/raw/*.csv
+data/processed/*.json
+reports/figures/*.png
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!reports/figures/.gitkeep
+*.gif
+*.mp4
+*.prof
+*.log
+*.zip
+
+# Generated experiment outputs. Keep documentation and placeholder files only.
+reports/**
+!reports/**/
+!reports/**/*.md
+!reports/**/.gitkeep
+
+# Local lab captures may contain workspace images, measured poses and device
+# paths. Keep only the reusable scripts and notes in Git.
+jetson_captures/**
+!jetson_captures/**/
+!jetson_captures/**/*.py
+!jetson_captures/**/*.md
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

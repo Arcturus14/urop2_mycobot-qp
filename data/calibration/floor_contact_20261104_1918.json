@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-11-04T19:18:02+09:00",
+  "source": "single read via robot_bridge snapshot on mycobot",
+  "contact_description": "User reports a new EE floor contact; same fully closed both-fingertip contact assumed from ongoing procedure",
+  "purpose": "independent validation of first-contact Z offset; no refit",
+  "joints_deg": [36.82, -54.84, -66.53, 33.48, -1.31, -58.35],
+  "robot_coords_mm_deg": [237.8, 97.5, 110.2, 179.98, -2.48, 5.16],
+  "model_flange_raw_xyz_mm": [237.107, 95.483, 127.298],
+  "model_closed_tip_raw_xyz_mm": [243.191, 80.363, 4.845],
+  "model_to_table_z_offset_m": -0.0039074282962918705,
+  "table_closed_tip_estimate_xyz_mm": [243.191, 80.363, 0.938],
+  "individual_tip_height_estimates_mm": [0.48281028529661985, 1.392502031974316],
+  "floor_height_residual_mm": 0.937656158635468,
+  "calibration_modified": false,
+  "note": "One additional contact supports the provisional Z correction to about 1 mm at this pose; not a workspace-wide accuracy guarantee. No motion or torque command sent."
+}

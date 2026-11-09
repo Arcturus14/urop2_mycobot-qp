@@ -1,0 +1,38 @@
+{
+  "tool": {
+    "include_gripper": true,
+    "include_camera": true,
+    "gripper_mount_m": 0.034,
+    "gripper_length_m": 0.095,
+    "gripper_radius_m": 0.04,
+    "camera_offset_m": [0.024000001327, 0.000499983175, 0.010004101791],
+    "camera_size_m": [0.082965087891, 0.016, 0.033965091705],
+    "camera_rpy_deg": [89.529964148845, -0.000001247268, 179.999847965620],
+    "gripper_size_m": [0.094, 0.050, 0.112],
+    "gripper_center_m": [0.0, -0.012, 0.090],
+    "gripper_rpy_deg": [0.0, 0.0, 0.0],
+    "clearance_m": 0.005
+  },
+  "floor_calibration": {
+    "enabled": true,
+    "status": "provisional_single_contact",
+    "model_to_table_z_offset_m": -0.0039074282962918705,
+    "closed_tip_midpoint_flange_m": [-0.0006074162445369735, 0.01558979024732451, 0.12254399473376541],
+    "source_contact": "data/calibration/floor_contact_20261104_1906.json",
+    "source_report": "assets/official/gripper_contact_report.json",
+    "note": "Z-only correction. Table XY axes retain URDF convention; no XY/tilt or joint-zero calibration. Closed-tip estimate is valid only for fully closed gripper. Validate with additional floor contacts."
+  },
+  "sources": {
+    "robot_kinematics": "Modified DH with manufacturer angle offsets and official myCobot 280 JN URDF dimensions",
+    "gripper_mount": "Official myCobot 280 JN adaptive-gripper URDF",
+    "camera": "Official camera_flange_230708 STEP and ROS DAE matching bounds; composed URDF fixed-joint and collision-mesh origins"
+  },
+  "calibration_note": "Camera bounding box derived from 19317 official DAE vertices including scene instances; dimensions independently checked against STEP solids. Uses official standard mounting with no additional clocking; photos taken without J6 rotation are the qualitative assembly reference, not metric calibration. Gripper center and motor offset remain an approximate envelope. Clearance is an engineering margin. Flexible cables and grasped objects are excluded.",
+  "source_urls": [
+    "https://docs.elephantrobotics.com/docs/AI_Portable_Kit_en/2-ProductFeature/2.4.1-adaptive_gripper.html",
+    "https://docs.elephantrobotics.com/docs/AI_Portable_Kit_en/2-ProductFeature/2.4.4-camera.html",
+    "https://github.com/elephantrobotics/mycobot_ros2/blob/humble/mycobot_description/urdf/mycobot_280_jn/mycobot_280_jn_adaptive_gripper.urdf",
+    "https://github.com/elephantrobotics/mycobot_ros2/blob/humble/mycobot_description/urdf/mycobot_280_pi/mycobot_280_pi_with_camera_flange.urdf",
+    "https://docs.elephantrobotics.com/docs/mycobot_280_pi_en/3-FunctionsAndApplications/8.SupportingResources/8.2-ProductDrawings/"
+  ]
+}

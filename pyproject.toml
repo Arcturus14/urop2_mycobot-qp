@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mycobot-jn5-identification"
+version = "0.1.0"
+description = "Closed-loop joint model identification tools for myCobot 280 JN5"
+requires-python = ">=3.8"
+
+[tool.setuptools]
+packages = ["mycobot_id", "experiments", "analysis"]

@@ -1,0 +1,6 @@
+{
+  "ssh_host": "mycobot",
+  "remote_root": "/home/er/workspace/urop2-identification",
+  "port": "/dev/ttyTHS1",
+  "baud": 1000000
+}

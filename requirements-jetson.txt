@@ -1,0 +1,2 @@
+# Verified on nano (Python 3.8.10). The deployment reuses this installed version.
+pymycobot==3.5.3

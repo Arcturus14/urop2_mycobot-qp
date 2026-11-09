@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-11-04T19:06:45+09:00",
+  "source": "single read via robot_bridge snapshot on mycobot",
+  "contact_description": "User confirmed both fingertips of the fully closed gripper touching the same floor/table plane",
+  "gripper_state": "fully closed, user confirmed",
+  "contact_feature": "both fingertips",
+  "joints_deg": [-55.01, -33.48, -109.86, 53.87, 1.31, -33.48],
+  "robot_coords_mm_deg": [59.9, -194.4, 109.5, -178.83, 0.8, -111.51],
+  "model_flange_xyz_mm": [57.909, -193.605, 126.723],
+  "model_flange_z_axis": [0.024033, 0.005534, -0.999696],
+  "correction_applied": true,
+  "correction_scope": "Laptop coordinate presentation only: provisional model-to-table Z translation. Firmware coordinates, joint commands and joint origins unchanged.",
+  "model_to_table_z_offset_m": -0.0039074282962918705,
+  "note": "Closed tip from official DAE/URDF and official slider mapping API 0 -> -0.74 rad; exact contact surface remains a mesh-based estimate. Single-contact Z offset is not independently validated; no XY or tilt calibration. See assets/official/gripper_contact_report.json."
+}

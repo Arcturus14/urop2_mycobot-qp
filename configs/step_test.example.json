@@ -1,0 +1,11 @@
+{
+  "output": "data/raw/mock_step_J1.csv",
+  "joint": 1,
+  "initial_angles_deg": [0, 0, 0, 0, 0, 0],
+  "target_deg": 10.0,
+  "speed": 30,
+  "settle_before_s": 2.0,
+  "record_after_s": 5.0,
+  "poll_interval_s": 0.02,
+  "return_to_initial": false
+}
